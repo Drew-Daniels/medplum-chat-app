@@ -87,6 +87,14 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
         color: "#ffffff",
       },
     ],
+    [
+      "expo-build-properties",
+      {
+        ios: {
+          deploymentTarget: "15.1", // Or your desired minimum version
+        },
+      },
+    ],
   ],
   experiments: {
     typedRoutes: true,
